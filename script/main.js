@@ -92,9 +92,9 @@ carousel(0);
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if(document.body.scrollTop > 200) {
-        document.getElementsByClassName('backTop')[0].style.display = 'flex';
+        document.querySelectorAll('.backTop')[0].style.display = 'flex';
     } else {
-        document.getElementsByClassName('backTop')[0].style.display = 'none';
+        document.querySelectorAll('.backTop')[0].style.display = 'none';
     }
 }
 function backTop() {
