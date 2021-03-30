@@ -1,0 +1,635 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monstar Lab Test</title>
+        
+        <link rel='shortcut icon' type='image/x-icon' href='./images/download.jfif' />
+        <link rel="stylesheet" href="./stylesheet/bootstrap.min.css" />
+        <link rel="stylesheet" href="./stylesheet/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <div class="col-md-3 col-sm-4 col-xs-12 logo-header">
+                        <img src="./images/logo.png" alt="logo" />
+                        <span>Thegem</span>
+                    </div>
+                    <div class="col-md-7 col-sm-6 menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolios</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Elements</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 list-icon">
+                        <div class="toggle-icon">
+                            <i class="fas fa-stream" onclick="toggleMenu()"></i>
+                        </div>
+                        <div class="language">
+                            <a href="#"><img src="./images/flag-united-kingdom-vector-260nw-304681397.webp" alt="language"></a>
+                        </div>
+                        <div class="search">
+                            <i class="fas fa-search"></i>
+                            <div class="search-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Search" class="form-control"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span class="count">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile" id="menu-mobile">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Portfolios</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="slideshow">
+                <div class="item fadeSlider">
+                    <div class="container">
+                        <div class="slideshow-content">
+                            <i class="fas fa-list-ul"></i>
+                            <div class="slideshow-content__title">
+                                <span>Pricing <b>TABLES</b></span>
+                            </div>
+                            <div class="slideshow-content__description">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                            </div>
+                            <div class="slideshow-content__button">
+                                <button class="btn btn-button btn--white">purchase now</button>
+                                <button class="btn btn-button btn--blue">more details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item fadeSlider">
+                    <div class="container">
+                        <div class="slideshow-content">
+                            <i class="fas fa-list-ul"></i>
+                            <div class="slideshow-content__title">
+                                <span>Pricing <b>TABLES</b> 2</span>
+                            </div>
+                            <div class="slideshow-content__description">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                            </div>
+                            <div class="slideshow-content__button">
+                                <button class="btn btn-button btn--white">purchase now</button>
+                                <button class="btn btn-button btn--blue">more details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item fadeSlider">
+                    <div class="container">
+                        <div class="slideshow-content">
+                            <i class="fas fa-list-ul"></i>
+                            <div class="slideshow-content__title">
+                                <span>Pricing <b>TABLES</b> 3</span>
+                            </div>
+                            <div class="slideshow-content__description">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                            </div>
+                            <div class="slideshow-content__button">
+                                <button class="btn btn-button btn--white">purchase now</button>
+                                <button class="btn btn-button btn--blue">more details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <a href="javascript:void(0)" class="nav-button button-prev" id="nav-prev"><i class="fas fa-arrow-left"></i></a>
+                    <a href="javascript:void(0)" class="nav-button button-next" id="nav-next"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="owl-dots">
+                    <span class="dot" onclick="showSlide(0)"></span> 
+                    <span class="dot" onclick="showSlide(1)"></span> 
+                    <span class="dot" onclick="showSlide(2)"></span> 
+                </div>
+            </div>
+            <div class="section section-1">
+                <div class="container">
+                    <div class="section__title">
+                        <span>lorem <b>ipsum</b></span>
+                    </div>
+                    <div class="section__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                    </div>
+                    <div class="pack-one">
+                        <div class="col-md-3 column">
+                            <div class="column__title">beginner</div>
+                            <div class="column__price bg--light-blue">
+                                <span class="price">$10</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__subtitle"></div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--light-blue"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="column__title">advanced</div>
+                            <div class="column__price bg--emerald">
+                                <span class="price">$45</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__subtitle"></div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--emerald"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="column__new bg--darkcolor">new</div>
+                            <div class="column__title">Master</div>
+                            <div class="column__price bg--sky">
+                                <span class="price">$249</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__subtitle">
+                                <p>Subtitle Goes Here</p>
+                                <span>Subtitle second line goes here</span>
+                            </div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--sky"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="column__title">insane</div>
+                            <div class="column__price bg--violet">
+                                <span class="price">$1399</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__subtitle"></div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-2">
+                <div class="container">
+                    <div class="pack-two">
+                        <div class="col-md-4">
+                            <div class="column">
+                                <div class="column__price">
+                                    <span class="price">beginner</span>
+                                    <span>$99 <span class="text--grey">Per month</span></span>
+                                    <p class="text--grey">The best price/quantity plan *</p>
+                                </div>
+                                <div class="column__subtitle">
+                                    <p>Subtitle Goes Here</p>
+                                    <span>Subtitle second line goes here lorem ipsum *</span>
+                                </div>
+                                <div class="column__properties bg--grey">Drop out ramen hustle</div>
+                                <div class="column__properties">Coworking viral landing</div>
+                                <div class="column__properties line-through bg--grey">Crush revenue traction</div>
+                                <div class="column__properties line-through">User base minimum viable</div>
+                                <div class="column__properties line-through bg--grey">Lorem ipsum dolor</div>
+                                <button class="btn btn-style-two"><i class="fas fa-caret-right"></i>order</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="column">
+                                <div class="column__new bg--yellow">new</div>
+                                <div class="column__price">
+                                    <span class="price">advanced</span>
+                                    <span>$199 <span class="text--grey">Per month</span></span>
+                                    <p class="text--grey">The best price/quantity plan *</p>
+                                </div>
+                                <div class="column__subtitle">
+                                    <p>Subtitle Goes Here</p>
+                                    <span>Subtitle second line goes here lorem ipsum *</span>
+                                </div>
+                                <div class="column__properties bg--grey">Drop out ramen hustle</div>
+                                <div class="column__properties">Coworking viral landing</div>
+                                <div class="column__properties line-through bg--grey">Crush revenue traction</div>
+                                <div class="column__properties line-through">User base minimum viable</div>
+                                <div class="column__properties line-through bg--grey">Lorem ipsum dolor</div>
+                                <button class="btn btn-style-two"><i class="fas fa-caret-right"></i>order</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="column">
+                                <div class="column__price">
+                                    <span class="price">ultimate</span>
+                                    <span>$299 <span class="text--grey">Per month</span></span>
+                                    <p class="text--grey">The best price/quantity plan *</p>
+                                </div>
+                                <div class="column__subtitle">
+                                    <p>Subtitle Goes Here</p>
+                                    <span>Subtitle second line goes here lorem ipsum *</span>
+                                </div>
+                                <div class="column__properties bg--grey">Drop out ramen hustle</div>
+                                <div class="column__properties">Coworking viral landing</div>
+                                <div class="column__properties line-through bg--grey">Crush revenue traction</div>
+                                <div class="column__properties line-through">User base minimum viable</div>
+                                <div class="column__properties line-through bg--grey">Lorem ipsum dolor</div>
+                                <button class="btn btn-style-two"><i class="fas fa-caret-right"></i>order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="section section-3">
+                <div class="container">
+                    <div class="col-md-3">
+                        <div class="column">
+                            <div class="column__subtitle">
+                                <p>Lorem Ipsum</p>
+                                <span>Subtitle second line goes here</span>
+                            </div>
+                            <div class="column__price">
+                                <span class="price">$1399</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__title">basic</div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="column">
+                            <div class="column__subtitle">
+                                <p>Lorem Ipsum</p>
+                                <span>Subtitle second line goes here</span>
+                            </div>
+                            <div class="column__price">
+                                <span class="price">$1399</span>
+                                <p>Per Month</p>
+                            </div>
+                            <div class="column__title">standard</div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="column">
+                            <div class="column__subtitle">
+                                <p>Lorem Ipsum</p>
+                                <span>Subtitle second line goes here</span>
+                            </div>
+                            <div class="column__price">
+                                <span class="price">$1399</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__title">ultimate</div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="column">
+                            <div class="column__subtitle">
+                                <p>Lorem Ipsum</p>
+                                <span>Subtitle second line goes here</span>
+                            </div>
+                            <div class="column__price">
+                                <span class="price">$1399</span>
+                                <span>Per Month</span>
+                            </div>
+                            <div class="column__title">premium</div>
+                            <div class="column__properties">Drop out ramen hustle</div>
+                            <div class="column__properties">Coworking viral landing</div>
+                            <div class="column__properties line-through">Crush revenue traction</div>
+                            <div class="column__properties line-through">User base minimum viable</div>
+                            <div class="column__properties line-through">Lorem ipsum dolor</div>
+                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="section section-9">
+                <div class="container">
+                    <img src="./images/Untitled-4.png" alt="img" />
+                    <div class="section__title">
+                        <span>ad block</span>
+                    </div>
+                    <div class="section__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    </div>
+                    <button class="btn btn-button btn--blue">purchase now</button>
+                </div>
+            </div>
+            <footer>
+                <div class="footer__main">
+                    <div class="container">
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                            <div class="footer__box information">
+                                <img src="./images/Untitled-1.png" alt="logo-footer"><div class="logo-footer-name"><span>the</span><br /><b>gem</b></div>
+                                <p>
+                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                </p>
+                            </div>
+                            <div class="footer__box contact">
+                                <div class="footer__box__title">
+                                    <span>contact</span>
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>
+                                        Address:<br /> 908 New Hampshire Avenue Northwest #100, Washington, DC 20037, United States
+                                    </span>
+                                </div>
+                                <div class="contact-box">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>Phone:  +1 916-875-2235</span>
+                                </div>
+                                <div class="contact-box">
+                                    <i class="far fa-list-alt"></i>
+                                    <span>Fax: +1 916-875-2235</span>
+                                </div>
+                                <div class="contact-box">
+                                    <i class="far fa-envelope"></i>
+                                    <span>Email: <a href="mailto:info@domain.ltd" class="text-blue">info@domain.ltd</a></span>
+                                </div>
+                                <div class="contact-box">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Website: <a href="www.codex-themes.com" class="text-blue" target="_blank">www.codex-themes.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                            <div class="footer__box">
+                                <div class="footer__box__title">
+                                    <span>recent posts</span>
+                                </div>
+                                <div class="post-box">
+                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                    <p>
+                                        <span class="date text-blue">
+                                            27 Dec 2015
+                                        </span>
+                                        <span class="comments">
+                                            <i class="far fa-comment"></i> 0
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="post-box">
+                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                    <p>
+                                        <span class="date text-blue">
+                                            27 Dec 2015
+                                        </span>
+                                        <span class="comments">
+                                            <i class="far fa-comment"></i> 14
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="post-box">
+                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                    <p>
+                                        <span class="date text-blue">
+                                            27 Dec 2015
+                                        </span>
+                                        <span class="comments">
+                                            <i class="far fa-comment"></i> 0
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer__box">
+                                <div class="footer__box__title">
+                                    <span>Useful links</span>
+                                </div>
+                                <div class="footer__box__link">
+                                    <ul>
+                                        <li><a href="#">General Information For Users</a></li>
+                                        <li><a href="#">Interactive Fairy Tales</a></li>
+                                        <li><a href="#">Official Storybook Maker Website</a></li>
+                                        <li><a href="#">Everyday Mathematics Links</a></li>
+                                        <li><a href="#">Basic Knowledge and Experience</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                            <div class="footer__box">
+                                <div class="footer__box__title">
+                                    <span>email us</span>
+                                </div>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="your@email.address">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <textarea name="">Your message</textarea>
+                                    <input type="button" class="btn btn-submit" value="Send message">
+                                </form>
+                            </div>
+                            <div class="footer__box">
+                                <div class="footer__box__title">
+                                    <span>projects / clients ?</span>
+                                </div>
+                                <div class="footer-projects">
+                                    <div class="carousel">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-dotted text-center">
+                                        <button class="dotted" onclick="carousel(0)"></button>
+                                        <button class="dotted" onclick="carousel(1)"></button>
+                                        <button class="dotted" onclick="carousel(2)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                            <div class="footer__box flickr">
+                                <div class="footer__box__title">
+                                    Flickr feed
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                        <img src="./images/150.png" alt="flickr">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__box newsletter">
+                                <div class="footer__box__title">
+                                    <span>Newsletter</span>
+                                </div>
+                                <p>
+                                    Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:
+                                </p>
+                                <form action=""class="form-newsletter">
+                                    <input type="text" class="form-control" placeholder="Your email address"/>
+                                    <i class="fas fa-chevron-right"></i>
+                                </form>
+                                <p class="further">
+                                    <span class="text-blue">*</span>Personal information will be encrypted
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright">
+                <div class="container">
+                    <div class="col-md-3 col-sm-12 col-xs-12 text-copyright">
+                        <span>© Copyright 2015 <span class="text-blue">CodexThemes</span></span>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 menu-footer">
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12 social">
+                        <a href="#"><i class="fab fa-twitter text-blue"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-yellow"></i></a>
+                        <a href="#"><i class="fab fa-youtube text-red"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-red"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p text-red"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="backTop" onclick="backTop()"><i class="fas fa-angle-up"></i></a>
+        <script src="./script/main.js"></script>
+
+    </body>
+</html>
