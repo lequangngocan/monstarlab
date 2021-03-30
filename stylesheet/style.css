@@ -9,14 +9,22 @@
     src: url(./fonts/MYRIADPRO-LIGHTSEMIEXT_0.OTF);
 }
 
-@-webkit-keyframes fadeSlider {
-    from {opacity: .4} 
-    to {opacity: 1}
+.fade {
+	opacity: 1;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
-@keyframes fadeSlider {
-    from {opacity: .4} 
-    to {opacity: 1}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
 }
 
 html {
@@ -25,9 +33,6 @@ html {
 
 body {
 	font-family: 'Myriad Pro';
-}
-
-.wrapper {
     width: 100%;
     overflow-x: hidden;
 }
@@ -70,17 +75,14 @@ header {
 	padding: 0;
 }
 
-.menu ul {
+.menu nav {
 	padding: 0;
 	margin: 0;
 }
 
-.menu ul li {
+.menu nav a {
 	float: left;
 	padding: 0 15px;
-}
-
-.menu ul li a {
 	font-size: 18px;
 	font-weight: bold;
 	color: var(--grey);
@@ -88,7 +90,7 @@ header {
 	text-transform: uppercase;
 }
 
-.menu ul li a:hover {
+.menu nav a:hover {
 	color: var(--lightcolor);
 }
 
@@ -290,7 +292,7 @@ header {
 
 footer {
 	background-color: #212331;
-	padding: 100px 0 90px 0;
+	padding: 100px 0 0 0;
 	color: var(--grey);
 	font-size: 15px;
 }
@@ -502,6 +504,7 @@ footer {
 
 .copyright {
 	clear: both;
+	margin-top: 70px;
 	background: #181828;
 	color: var(--grey);
 }
@@ -600,13 +603,6 @@ footer {
     display: block;  
 }
 
-.fadeSlider {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-}
-
 .dot {
     cursor:pointer;
     height: 13px;
@@ -662,14 +658,20 @@ footer {
 }
 
 .column__new {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.column__new span {
 	color: #fff;
 	position: absolute;
-	width: 50px;
-	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
 	line-height: 50px;
 	border-radius: 50%;
 	top: -25px;
-	left: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -713,12 +715,12 @@ footer {
 }
 
 .section-2 .column__price p {
-	display: none;
+	visibility: hidden;
 	font-size: 14px;
 }
 
 .column:hover .column__price p {
-	display: block;
+	visibility: visible;
 }
 
 .section-2 .column__subtitle {
@@ -750,12 +752,6 @@ footer {
 .btn-style-two:hover {
 	background-color: var(--lightcolor);
 	color: #fff
-}
-
-.column__new.bg--yellow {
-	left: 0px;
-    right: 0px;
-    margin: 0 auto;
 }
 
 .section-3 .column {
@@ -808,24 +804,21 @@ footer {
 }
 
 .menu-mobile {
-    padding-top: 20px;
     display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
 
-.menu-mobile ul {
+.menu-mobile nav {
     padding-left: 0;
 }
 
-.menu-mobile ul li {
+.menu-mobile nav a {
     padding: 15px 0 0 0;
-}
-
-.menu-mobile ul li a {
     color: #fff;
     font-size: 18px;
+	display: block;
 }
 
 .menu-mobile {
@@ -838,7 +831,7 @@ footer {
     background: transparent;
 }
 
-.menu-mobile ul li a:hover {
+.menu-mobile nav a:hover {
     color: var(--lightcolor);
 }
 
@@ -871,7 +864,7 @@ footer {
     .logo-header img {
         margin-top: 25px;
     }
-    .menu ul li {
+    .menu nav a {
         padding: 0 14px;
     }
 }
@@ -1004,7 +997,10 @@ footer {
     }
 }
 
-@media(max-width: 385px) {
+@media(max-width: 320px) {
+	html {
+		width: 320px;
+	}
     .slideshow-content__description span {
         overflow: hidden;
         -webkit-line-clamp: 4;

@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <title>Monstar Lab Test</title>
         
         <link rel='shortcut icon' type='image/x-icon' href='./images/download.jfif' />
@@ -13,61 +13,61 @@
     crossorigin="anonymous" />
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="container">
-                    <div class="col-md-3 col-sm-4 col-xs-12 logo-header">
-                        <img src="./images/logo.png" alt="logo" />
-                        <span>Thegem</span>
+        <header>
+            <div class="container">
+                <div class="col-md-3 col-sm-4 col-xs-12 logo-header">
+                    <img src="./images/logo.png" alt="logo" />
+                    <span>Thegem</span>
+                </div>
+                <div class="col-md-7 col-sm-6 menu">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Pages</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Portfolios</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Features</a>
+                        <a href="#">Elements</a>
+                    </nav>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12 list-icon">
+                    <div class="toggle-icon">
+                        <i class="fas fa-stream" onclick="toggleMenu()"></i>
                     </div>
-                    <div class="col-md-7 col-sm-6 menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Portfolios</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Elements</a></li>
-                        </ul>
+                    <div class="language">
+                        <a href="#"><img src="./images/flag-united-kingdom-vector-260nw-304681397.webp" alt="language"></a>
                     </div>
-                    <div class="col-md-2 col-sm-2 col-xs-12 list-icon">
-                        <div class="toggle-icon">
-                            <i class="fas fa-stream" onclick="toggleMenu()"></i>
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        <div class="search-form">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Search" class="form-control"/>
+                                </div>
+                            </form>
                         </div>
-                        <div class="language">
-                            <a href="#"><img src="./images/flag-united-kingdom-vector-260nw-304681397.webp" alt="language"></a>
-                        </div>
-                        <div class="search">
-                            <i class="fas fa-search"></i>
-                            <div class="search-form">
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Search" class="form-control"/>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="cart">
-                            <i class="fas fa-shopping-basket"></i>
-                            <span class="count">2</span>
-                        </div>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="count">2</span>
                     </div>
                 </div>
-                <div class="menu-mobile" id="menu-mobile">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Portfolios</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Elements</a></li>
-                    </ul>
-                </div>
-            </header>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Portfolios</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Features</a>>
+                    <a href="#">Elements</a>
+                </nav>
+            </div>
+        </header>
+        <main>
             <div class="slideshow">
-                <div class="item fadeSlider">
+                <div class="item fade">
                     <div class="container">
                         <div class="slideshow-content">
                             <i class="fas fa-list-ul"></i>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item fadeSlider">
+                <div class="item fade">
                     <div class="container">
                         <div class="slideshow-content">
                             <i class="fas fa-list-ul"></i>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item fadeSlider">
+                <div class="item fade">
                     <div class="container">
                         <div class="slideshow-content">
                             <i class="fas fa-list-ul"></i>
@@ -119,8 +119,8 @@
                     </div>
                 </div>
                 <div class="owl-nav">
-                    <a href="javascript:void(0)" class="nav-button button-prev" id="nav-prev"><i class="fas fa-arrow-left"></i></a>
-                    <a href="javascript:void(0)" class="nav-button button-next" id="nav-next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="nav-button button-prev"><i class="fas fa-arrow-left"></i></a>
+                    <a href="javascript:void(0)" class="nav-button button-next"><i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="owl-dots">
                     <span class="dot" onclick="showSlide(0)"></span> 
@@ -166,7 +166,7 @@
                             <button class="btn btn-style-one bg-hover--emerald"><i class="fas fa-caret-right"></i>order</button>
                         </div>
                         <div class="col-md-3 column">
-                            <div class="column__new bg--darkcolor">new</div>
+                            <div class="column__new"><span class="bg--darkcolor">new</span></div>
                             <div class="column__title">Master</div>
                             <div class="column__price bg--sky">
                                 <span class="price">$249</span>
@@ -224,7 +224,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="column">
-                                <div class="column__new bg--yellow">new</div>
+                                <div class="column__new"><span class="bg--yellow">new</span></div>
                                 <div class="column__price">
                                     <span class="price">advanced</span>
                                     <span>$199 <span class="text--grey">Per month</span></span>
@@ -264,86 +264,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="section section-3">
-                <div class="container">
-                    <div class="col-md-3">
-                        <div class="column">
-                            <div class="column__subtitle">
-                                <p>Lorem Ipsum</p>
-                                <span>Subtitle second line goes here</span>
-                            </div>
-                            <div class="column__price">
-                                <span class="price">$1399</span>
-                                <span>Per Month</span>
-                            </div>
-                            <div class="column__title">basic</div>
-                            <div class="column__properties">Drop out ramen hustle</div>
-                            <div class="column__properties">Coworking viral landing</div>
-                            <div class="column__properties line-through">Crush revenue traction</div>
-                            <div class="column__properties line-through">User base minimum viable</div>
-                            <div class="column__properties line-through">Lorem ipsum dolor</div>
-                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="column">
-                            <div class="column__subtitle">
-                                <p>Lorem Ipsum</p>
-                                <span>Subtitle second line goes here</span>
-                            </div>
-                            <div class="column__price">
-                                <span class="price">$1399</span>
-                                <p>Per Month</p>
-                            </div>
-                            <div class="column__title">standard</div>
-                            <div class="column__properties">Drop out ramen hustle</div>
-                            <div class="column__properties">Coworking viral landing</div>
-                            <div class="column__properties line-through">Crush revenue traction</div>
-                            <div class="column__properties line-through">User base minimum viable</div>
-                            <div class="column__properties line-through">Lorem ipsum dolor</div>
-                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="column">
-                            <div class="column__subtitle">
-                                <p>Lorem Ipsum</p>
-                                <span>Subtitle second line goes here</span>
-                            </div>
-                            <div class="column__price">
-                                <span class="price">$1399</span>
-                                <span>Per Month</span>
-                            </div>
-                            <div class="column__title">ultimate</div>
-                            <div class="column__properties">Drop out ramen hustle</div>
-                            <div class="column__properties">Coworking viral landing</div>
-                            <div class="column__properties line-through">Crush revenue traction</div>
-                            <div class="column__properties line-through">User base minimum viable</div>
-                            <div class="column__properties line-through">Lorem ipsum dolor</div>
-                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="column">
-                            <div class="column__subtitle">
-                                <p>Lorem Ipsum</p>
-                                <span>Subtitle second line goes here</span>
-                            </div>
-                            <div class="column__price">
-                                <span class="price">$1399</span>
-                                <span>Per Month</span>
-                            </div>
-                            <div class="column__title">premium</div>
-                            <div class="column__properties">Drop out ramen hustle</div>
-                            <div class="column__properties">Coworking viral landing</div>
-                            <div class="column__properties line-through">Crush revenue traction</div>
-                            <div class="column__properties line-through">User base minimum viable</div>
-                            <div class="column__properties line-through">Lorem ipsum dolor</div>
-                            <button class="btn btn-style-one bg-hover--violet"><i class="fas fa-caret-right"></i>order</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="section section-9">
                 <div class="container">
                     <img src="./images/Untitled-4.png" alt="img" />
@@ -356,252 +276,252 @@
                     <button class="btn btn-button btn--blue">purchase now</button>
                 </div>
             </div>
-            <footer>
-                <div class="footer__main">
-                    <div class="container">
-                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
-                            <div class="footer__box information">
-                                <img src="./images/Untitled-1.png" alt="logo-footer"><div class="logo-footer-name"><span>the</span><br /><b>gem</b></div>
-                                <p>
-                                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
-                                </p>
-                            </div>
-                            <div class="footer__box contact">
-                                <div class="footer__box__title">
-                                    <span>contact</span>
-                                </div>
-                                <div class="address">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>
-                                        Address:<br /> 908 New Hampshire Avenue Northwest #100, Washington, DC 20037, United States
-                                    </span>
-                                </div>
-                                <div class="contact-box">
-                                    <i class="fas fa-headphones"></i>
-                                    <span>Phone:  +1 916-875-2235</span>
-                                </div>
-                                <div class="contact-box">
-                                    <i class="far fa-list-alt"></i>
-                                    <span>Fax: +1 916-875-2235</span>
-                                </div>
-                                <div class="contact-box">
-                                    <i class="far fa-envelope"></i>
-                                    <span>Email: <a href="mailto:info@domain.ltd" class="text-blue">info@domain.ltd</a></span>
-                                </div>
-                                <div class="contact-box">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Website: <a href="www.codex-themes.com" class="text-blue" target="_blank">www.codex-themes.com</a></span>
-                                </div>
-                            </div>
+        </main>
+        <footer>
+            <div class="footer__main">
+                <div class="container">
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                        <div class="footer__box information">
+                            <img src="./images/Untitled-1.png" alt="logo-footer"><div class="logo-footer-name"><span>the</span><br /><b>gem</b></div>
+                            <p>
+                                Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            </p>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
-                            <div class="footer__box">
-                                <div class="footer__box__title">
-                                    <span>recent posts</span>
-                                </div>
-                                <div class="post-box">
-                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
-                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
-                                    <p>
-                                        <span class="date text-blue">
-                                            27 Dec 2015
-                                        </span>
-                                        <span class="comments">
-                                            <i class="far fa-comment"></i> 0
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="post-box">
-                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
-                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
-                                    <p>
-                                        <span class="date text-blue">
-                                            27 Dec 2015
-                                        </span>
-                                        <span class="comments">
-                                            <i class="far fa-comment"></i> 14
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="post-box">
-                                    <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
-                                    <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
-                                    <p>
-                                        <span class="date text-blue">
-                                            27 Dec 2015
-                                        </span>
-                                        <span class="comments">
-                                            <i class="far fa-comment"></i> 0
-                                        </span>
-                                    </p>
-                                </div>
+                        <div class="footer__box contact">
+                            <div class="footer__box__title">
+                                <span>contact</span>
                             </div>
-                            <div class="footer__box">
-                                <div class="footer__box__title">
-                                    <span>Useful links</span>
-                                </div>
-                                <div class="footer__box__link">
-                                    <ul>
-                                        <li><a href="#">General Information For Users</a></li>
-                                        <li><a href="#">Interactive Fairy Tales</a></li>
-                                        <li><a href="#">Official Storybook Maker Website</a></li>
-                                        <li><a href="#">Everyday Mathematics Links</a></li>
-                                        <li><a href="#">Basic Knowledge and Experience</a></li>
-                                    </ul>
-                                </div>
+                            <div class="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    Address:<br /> 908 New Hampshire Avenue Northwest #100, Washington, DC 20037, United States
+                                </span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
-                            <div class="footer__box">
-                                <div class="footer__box__title">
-                                    <span>email us</span>
-                                </div>
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your name">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="your@email.address">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <textarea name="">Your message</textarea>
-                                    <input type="button" class="btn btn-submit" value="Send message">
-                                </form>
+                            <div class="contact-box">
+                                <i class="fas fa-headphones"></i>
+                                <span>Phone:  +1 916-875-2235</span>
                             </div>
-                            <div class="footer__box">
-                                <div class="footer__box__title">
-                                    <span>projects / clients ?</span>
-                                </div>
-                                <div class="footer-projects">
-                                    <div class="carousel">
-                                        <div class="row">
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/150.png" alt="flickr">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel">
-                                        <div class="row">
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/300.png" alt="flickr">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel">
-                                        <div class="row">
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                                <img src="./images/600.png" alt="flickr">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="nav-dotted text-center">
-                                        <button class="dotted" onclick="carousel(0)"></button>
-                                        <button class="dotted" onclick="carousel(1)"></button>
-                                        <button class="dotted" onclick="carousel(2)"></button>
-                                    </div>
-                                </div>
+                            <div class="contact-box">
+                                <i class="far fa-list-alt"></i>
+                                <span>Fax: +1 916-875-2235</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
-                            <div class="footer__box flickr">
-                                <div class="footer__box__title">
-                                    Flickr feed
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                        <img src="./images/150.png" alt="flickr">
-                                    </div>
-                                </div>
+                            <div class="contact-box">
+                                <i class="far fa-envelope"></i>
+                                <span>Email: <a href="mailto:info@domain.ltd" class="text-blue">info@domain.ltd</a></span>
                             </div>
-                            <div class="footer__box newsletter">
-                                <div class="footer__box__title">
-                                    <span>Newsletter</span>
-                                </div>
-                                <p>
-                                    Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:
-                                </p>
-                                <form action=""class="form-newsletter">
-                                    <input type="text" class="form-control" placeholder="Your email address"/>
-                                    <i class="fas fa-chevron-right"></i>
-                                </form>
-                                <p class="further">
-                                    <span class="text-blue">*</span>Personal information will be encrypted
-                                </p>
+                            <div class="contact-box">
+                                <i class="fas fa-globe"></i>
+                                <span>Website: <a href="www.codex-themes.com" class="text-blue" target="_blank">www.codex-themes.com</a></span>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                        <div class="footer__box">
+                            <div class="footer__box__title">
+                                <span>recent posts</span>
+                            </div>
+                            <div class="post-box">
+                                <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                <p>
+                                    <span class="date text-blue">
+                                        27 Dec 2015
+                                    </span>
+                                    <span class="comments">
+                                        <i class="far fa-comment"></i> 0
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="post-box">
+                                <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                <p>
+                                    <span class="date text-blue">
+                                        27 Dec 2015
+                                    </span>
+                                    <span class="comments">
+                                        <i class="far fa-comment"></i> 14
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="post-box">
+                                <img src="./images/150.png" alt="Proin gravida nibh vel velit auctor aliquet aenean...">
+                                <span class="post-title"><a href="#">Proin gravida nibh vel velit auctor aliquet aenean...</a></span>
+                                <p>
+                                    <span class="date text-blue">
+                                        27 Dec 2015
+                                    </span>
+                                    <span class="comments">
+                                        <i class="far fa-comment"></i> 0
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__box">
+                            <div class="footer__box__title">
+                                <span>Useful links</span>
+                            </div>
+                            <div class="footer__box__link">
+                                <ul>
+                                    <li><a href="#">General Information For Users</a></li>
+                                    <li><a href="#">Interactive Fairy Tales</a></li>
+                                    <li><a href="#">Official Storybook Maker Website</a></li>
+                                    <li><a href="#">Everyday Mathematics Links</a></li>
+                                    <li><a href="#">Basic Knowledge and Experience</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                        <div class="footer__box">
+                            <div class="footer__box__title">
+                                <span>email us</span>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="your@email.address">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <textarea name="">Your message</textarea>
+                                <input type="button" class="btn btn-submit" value="Send message">
+                            </form>
+                        </div>
+                        <div class="footer__box">
+                            <div class="footer__box__title">
+                                <span>projects / clients ?</span>
+                            </div>
+                            <div class="footer-projects">
+                                <div class="carousel fade">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/150.png" alt="flickr">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel fade">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/300.png" alt="flickr">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel fade">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                            <img src="./images/600.png" alt="flickr">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-dotted text-center">
+                                    <button class="dotted" onclick="carousel(0)"></button>
+                                    <button class="dotted" onclick="carousel(1)"></button>
+                                    <button class="dotted" onclick="carousel(2)"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer__main__column">
+                        <div class="footer__box flickr">
+                            <div class="footer__box__title">
+                                Flickr feed
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                    <img src="./images/150.png" alt="flickr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__box newsletter">
+                            <div class="footer__box__title">
+                                <span>Newsletter</span>
+                            </div>
+                            <p>
+                                Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:
+                            </p>
+                            <form action=""class="form-newsletter">
+                                <input type="text" class="form-control" placeholder="Your email address"/>
+                                <i class="fas fa-chevron-right"></i>
+                            </form>
+                            <p class="further">
+                                <span class="text-blue">*</span>Personal information will be encrypted
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+            </div>
             <div class="copyright">
                 <div class="container">
                     <div class="col-md-3 col-sm-12 col-xs-12 text-copyright">
@@ -626,8 +546,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </footer>
         <a href="javascript:void(0)" class="backTop" onclick="backTop()"><i class="fas fa-angle-up"></i></a>
         <script src="./script/main.js"></script>
 
