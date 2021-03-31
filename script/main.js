@@ -13,16 +13,26 @@ function toggleMenu() {
 
 // back to top
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
-    if(document.body.scrollTop > 200) {
+    if(window.scrollY > 200) {
         document.querySelectorAll('.backTop')[0].style.display = 'flex';
     } else {
         document.querySelectorAll('.backTop')[0].style.display = 'none';
     }
 }
-function backTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+
+function animateToTop(e) {
+    e.preventDefault();
+    var scrollToTop = window.setInterval(function() {
+        var pos = window.pageYOffset;
+
+        if(pos > 0 && pageYOffset >= 10) {
+            window.scrollTo(0, pos - 20);
+        } else {
+            window.clearInterval(scrollToTop);
+        }
+    }, 9);
 }
 
 // slide
