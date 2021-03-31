@@ -50,9 +50,10 @@ function showSlide(n, parent) {
         n = items.length -1;
     }
     for(var i = 0; i < items.length; i++) {
-        items[i].className = items[i].className.replace(' active', '');
+        items[i].className = items[i].className.replace(' fadeOut', '');
+        items[i].className = items[i].className.replace(' fadeIn', ' fadeOut');
     }
-    items[n].className += ' active';
+    items[n].className += ' fadeIn';
 
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
@@ -69,9 +70,9 @@ function showSlide(n, parent) {
 
     slideIndex = n;
 }
-
+showSlide(0, 'slideshow');
 showSlide(0, 'footer-projects');
-carousel();
+// carousel();
 
 // autoplay
 function carousel() {

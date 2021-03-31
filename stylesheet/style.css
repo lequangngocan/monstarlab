@@ -9,31 +9,45 @@
     src: url(./fonts/MYRIADPRO-LIGHTSEMIEXT_0.OTF);
 }
 
-.fade {
+.fadeIn {
 	opacity: 1;
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 0.5s;
-	animation-name: fade;
-	animation-duration: 0.5s;
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fadeIn;
+	animation-duration: 2.5s;
 	animation-timing-function: ease-out;
 	animation-direction: alternate;
+	display: block !important;
 }
 
-@-webkit-keyframes fade {
+.fadeOut {
+	opacity: 0;
+	-webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fadeOut;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	display: block !important;
+}
+
+@keyframes fadeIn {
 	0%   {
 		transform: translateX(100%);
 	}
-  	100% {
+	100% {
 		transform: translateX(0%);
 	}
 }
 
-@keyframes fade {
+@keyframes fadeOut {
 	0%   {
-		transform: translateX(100%);
-	}
-  	100% {
 		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-100%);
+		opacity: 0;
 	}
 }
 
@@ -491,8 +505,8 @@ footer {
 	color: #4a4b5b;
 }
 
-.flickr {
-	padding-top: 12px;
+.flickr .footer__box__title{
+	padding-bottom: 38px;
 }
 
 .flickr .row, .footer-projects .row  {
@@ -576,9 +590,9 @@ footer {
 .count {
 	background: url(../images/Untitled-3.png) no-repeat;
 	position: absolute;
-	width: 30px;
+	padding: 0 15px;
 	top: 30%;
-	left: 90%;
+	left: 85%;
 	text-align: center;
 	color: #fff;
 }
@@ -1026,8 +1040,8 @@ footer {
 .item {
 	display: none;
 }
-.item.active {
+/* .item.active {
 	display: block !important;
 	border: 0;
 	background: none;
-}
+} */
