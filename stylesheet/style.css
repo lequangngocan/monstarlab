@@ -12,19 +12,29 @@
 .fade {
 	opacity: 1;
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 3.5s;
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
 }
 
 @-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
+	0%   {
+		  opacity: 0;
+	}
+  	100% {
+		  opacity: 1;
+	}
 }
 
 @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
+	0%   {
+		opacity: 0;
+	}
+		100% {
+			opacity: 1;
+	}
 }
 
 html {
@@ -283,8 +293,11 @@ header {
 	color: #fff;
 }
 
+.column {
+	transition: transform .3s;
+}
+
 .column:hover {
-	transition-duration: 0.5s;
 	transform: scale(1.1);
 	cursor: pointer;
 	z-index: 10;
@@ -1008,4 +1021,13 @@ footer {
         height: 100px;
         display: -webkit-box;
     }
+}
+
+.item {
+	display: none;
+}
+.item.active {
+	display: block !important;
+	border: 0;
+	background: none;
 }

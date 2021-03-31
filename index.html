@@ -123,9 +123,9 @@
                     <a href="javascript:void(0)" class="nav-button button-next"><i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="owl-dots">
-                    <span class="dot" onclick="showSlide(0)"></span> 
-                    <span class="dot" onclick="showSlide(1)"></span> 
-                    <span class="dot" onclick="showSlide(2)"></span> 
+                    <span class="dot" onclick="showSlide(0, 'slideshow')"></span> 
+                    <span class="dot" onclick="showSlide(1, 'slideshow')"></span> 
+                    <span class="dot" onclick="showSlide(2, 'slideshow')"></span> 
                 </div>
             </div>
             <div class="section section-1">
@@ -395,7 +395,7 @@
                                 <span>projects / clients ?</span>
                             </div>
                             <div class="footer-projects">
-                                <div class="carousel fade">
+                                <div class="item fade">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
                                             <img src="./images/150.png" alt="flickr">
@@ -417,7 +417,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel fade">
+                                <div class="item fade">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
                                             <img src="./images/300.png" alt="flickr">
@@ -439,7 +439,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel fade">
+                                <div class="item fade">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
                                             <img src="./images/600.png" alt="flickr">
@@ -462,9 +462,9 @@
                                     </div>
                                 </div>
                                 <div class="nav-dotted text-center">
-                                    <button class="dotted" onclick="carousel(0)"></button>
-                                    <button class="dotted" onclick="carousel(1)"></button>
-                                    <button class="dotted" onclick="carousel(2)"></button>
+                                    <button class="dot dotted" onclick="showSlide(0, 'footer-projects')"></button>
+                                    <button class="dot dotted" onclick="showSlide(1, 'footer-projects')"></button>
+                                    <button class="dot dotted" onclick="showSlide(2, 'footer-projects')"></button>
                                 </div>
                             </div>
                         </div>
