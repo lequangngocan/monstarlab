@@ -71,5 +71,5 @@ function carousel() {
     }
     showSlide(slideIndex, 'slideshow');
     slideIndex++;
-    setTimeout(carousel, 3000);
+    setTimeout(carousel, 2000);
 }
