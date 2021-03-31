@@ -1039,9 +1039,5 @@ footer {
 
 .item {
 	display: none;
+	position: absolute;
 }
-/* .item.active {
-	display: block !important;
-	border: 0;
-	background: none;
-} */
