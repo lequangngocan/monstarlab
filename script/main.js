@@ -44,33 +44,39 @@ showSlide(0, 'footer-projects', true);
 
 function showSlide(slideIndex, parent, autoplay) {
     var sliders = document.querySelectorAll('.'+parent)[0].children[0];
-    if(autoplay == true) {
-        sliders.className += ' autoplay';
-    }
-    var dots = document.querySelectorAll('.'+parent+' .dot');
-    var prev = document.querySelectorAll('.button-prev')[0];
-    var next = document.querySelectorAll('.button-next')[0];
-
+    
     if (slideIndex >= sliders.childElementCount) {
         slideIndex = 0;
     } else if (slideIndex < 0) {
         slideIndex = sliders.childElementCount -1;
     }
 
+    // check autoplay
+    if(autoplay == true) {
+        sliders.className += ' autoplay';
+    }
+
+    // dotted
+    var dots = document.querySelectorAll('.'+parent+' .dot');
     for (var i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
     dots[slideIndex].className += ' active';
 
-    prev.onclick = function() {
-        showSlide(slideIndex-1, 'slideshow');
-    };
+    // navigative
+    if(sliders.previousSibling.nextSibling.nextElementSibling.className == 'owl-nav') {
+        var prev = document.querySelectorAll('.button-prev')[0];
+        var next = document.querySelectorAll('.button-next')[0];
+        prev.onclick = function() {
+            showSlide(slideIndex-1, parent);
+        };
+    
+        next.onclick = function() {
+            showSlide(slideIndex+1, parent);
+        };
+    }
 
-    next.onclick = function() {
-        showSlide(slideIndex+1, 'slideshow');
-    };
-
-    // Actual slide
+    // actual slide
     sliders.firstElementChild.style.setProperty("margin-left", "-" + slideIndex + "00%");
 
     curSlide = slideIndex;
