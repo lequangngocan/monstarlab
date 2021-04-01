@@ -28,6 +28,10 @@ a:hover {
 	color: var(--lightcolor);
 }
 
+a:focus {
+	text-decoration: none;
+}
+
 header {
 	padding: 20px 0;
 	position: fixed;
@@ -704,7 +708,7 @@ footer {
 .footer-projects .slider {
   	height: auto;
 }
-.footer-projects .item {
+.footer-projects .slider .item {
   	padding-top: 0;
 }
 
@@ -1031,4 +1035,8 @@ footer {
         height: 100px;
         display: -webkit-box;
     }
+}
+
+.footer-projects .slider .item {
+	margin-left: -5px;
 }
