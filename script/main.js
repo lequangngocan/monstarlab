@@ -36,43 +36,44 @@ function animateToTop(e) {
 }
 
 //slide
-var i;
 var slideDelay = 3000;
 var curSlide = 0;
 
-showSlide(0, 'slideshow');
-showSlide(0, 'footer-projects');
+showSlide(0, 'slideshow', true);
+showSlide(0, 'footer-projects', true);
 
-function showSlide(numerical, parent) {
-
+function showSlide(slideIndex, parent, autoplay) {
     var sliders = document.querySelectorAll('.'+parent)[0].children[0];
+    if(autoplay == true) {
+        sliders.className += ' autoplay';
+    }
     var dots = document.querySelectorAll('.'+parent+' .dot');
     var prev = document.querySelectorAll('.button-prev')[0];
     var next = document.querySelectorAll('.button-next')[0];
 
-    if (numerical >= sliders.childElementCount) {
-        numerical = 0;
-    } else if (numerical < 0) {
-        numerical = sliders.childElementCount -1;
+    if (slideIndex >= sliders.childElementCount) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = sliders.childElementCount -1;
     }
 
-    for (i = 0; i < dots.length; i++) {
+    for (var i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
-    dots[numerical].className += ' active';
+    dots[slideIndex].className += ' active';
 
     prev.onclick = function() {
-        showSlide(numerical-1, 'slideshow');
+        showSlide(slideIndex-1, 'slideshow');
     };
 
     next.onclick = function() {
-        showSlide(numerical+1, 'slideshow');
+        showSlide(slideIndex+1, 'slideshow');
     };
 
     // Actual slide
-    sliders.firstElementChild.style.setProperty("margin-left", "-" + numerical + "00%");
+    sliders.firstElementChild.style.setProperty("margin-left", "-" + slideIndex + "00%");
 
-    curSlide = numerical;
+    curSlide = slideIndex;
 }
 
 setInterval(()=>{
@@ -84,7 +85,7 @@ setInterval(()=>{
         curSlide = 0;
     }
     
-    for(i = 0; i < sliders.length; i++) {
+    for(var i = 0; i < sliders.length; i++) {
         if(sliders[i].classList[1] == 'autoplay') {
             listAuto.push(sliders[i].parentElement.className);
         }
