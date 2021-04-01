@@ -1036,3 +1036,7 @@ footer {
         display: -webkit-box;
     }
 }
+
+.footer-projects .slider .item {
+	margin-left: -5px;
+}

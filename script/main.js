@@ -22,8 +22,7 @@ const scrollFunction = () => {
     }
 }
 
-const animateToTop = (e) => {
-    e.preventDefault();
+const animateToTop = () => {
     let scrollToTop = window.setInterval(function() {
         let pos = window.pageYOffset;
 
@@ -43,7 +42,6 @@ const showSlide = (parent, slideIndex, autoplay) => {
     if(typeof slideIndex == 'undefined' || slideIndex == null) {
         slideIndex = 0;
     }
-    console.log(autoplay);
     let sliders = document.querySelectorAll('.'+parent)[0].children[0];
     
     if (slideIndex >= sliders.childElementCount) {
