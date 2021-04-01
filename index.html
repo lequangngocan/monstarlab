@@ -67,60 +67,62 @@
         </header>
         <main>
             <div class="slideshow">
-                <div class="item">
-                    <div class="container">
-                        <div class="slideshow-content">
-                            <i class="fas fa-list-ul"></i>
-                            <div class="slideshow-content__title">
-                                <span>Pricing <b>TABLES</b></span>
-                            </div>
-                            <div class="slideshow-content__description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
-                            </div>
-                            <div class="slideshow-content__button">
-                                <button class="btn btn-button btn--white">purchase now</button>
-                                <button class="btn btn-button btn--blue">more details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="slideshow-content">
-                            <i class="fas fa-list-ul"></i>
-                            <div class="slideshow-content__title">
-                                <span>Pricing <b>TABLES</b> 2</span>
-                            </div>
-                            <div class="slideshow-content__description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
-                            </div>
-                            <div class="slideshow-content__button">
-                                <button class="btn btn-button btn--white">purchase now</button>
-                                <button class="btn btn-button btn--blue">more details</button>
+                <div class="slider">
+                    <div class="item">
+                        <div class="container">
+                            <div class="slideshow-content">
+                                <i class="fas fa-list-ul"></i>
+                                <div class="slideshow-content__title">
+                                    <span>Pricing <b>TABLES</b></span>
+                                </div>
+                                <div class="slideshow-content__description">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                                </div>
+                                <div class="slideshow-content__button">
+                                    <button class="btn btn-button btn--white">purchase now</button>
+                                    <button class="btn btn-button btn--blue">more details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="slideshow-content">
-                            <i class="fas fa-list-ul"></i>
-                            <div class="slideshow-content__title">
-                                <span>Pricing <b>TABLES</b> 3</span>
+                    <div class="item">
+                        <div class="container">
+                            <div class="slideshow-content">
+                                <i class="fas fa-list-ul"></i>
+                                <div class="slideshow-content__title">
+                                    <span>Pricing <b>TABLES</b> 2</span>
+                                </div>
+                                <div class="slideshow-content__description">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                                </div>
+                                <div class="slideshow-content__button">
+                                    <button class="btn btn-button btn--white">purchase now</button>
+                                    <button class="btn btn-button btn--blue">more details</button>
+                                </div>
                             </div>
-                            <div class="slideshow-content__description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
-                            </div>
-                            <div class="slideshow-content__button">
-                                <button class="btn btn-button btn--white">purchase now</button>
-                                <button class="btn btn-button btn--blue">more details</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="slideshow-content">
+                                <i class="fas fa-list-ul"></i>
+                                <div class="slideshow-content__title">
+                                    <span>Pricing <b>TABLES</b> 3</span>
+                                </div>
+                                <div class="slideshow-content__description">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+                                </div>
+                                <div class="slideshow-content__button">
+                                    <button class="btn btn-button btn--white">purchase now</button>
+                                    <button class="btn btn-button btn--blue">more details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="owl-nav">
-                    <a href="javascript:void(0)" class="nav-button button-prev"><i class="fas fa-arrow-left"></i></a>
-                    <a href="javascript:void(0)" class="nav-button button-next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="nav-button button-prev" onclick="navigation(-1)"><i class="fas fa-arrow-left"></i></a>
+                    <a href="javascript:void(0)" class="nav-button button-next" onclick="navigation(0)"><i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="owl-dots">
                     <span class="dot" onclick="showSlide(0, 'slideshow')"></span> 
@@ -395,69 +397,71 @@
                                 <span>projects / clients ?</span>
                             </div>
                             <div class="footer-projects">
-                                <div class="item fade">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/150.png" alt="flickr">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item fade">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/300.png" alt="flickr">
+                                <div class="slider">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/150.png" alt="flickr">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item fade">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/300.png" alt="flickr">
+                                            </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
-                                            <img src="./images/600.png" alt="flickr">
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 flickr-box">
+                                                <img src="./images/600.png" alt="flickr">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -549,6 +553,5 @@
         </footer>
         <a href="javascript:void(0)" class="backTop" onclick="animateToTop(event)"><i class="fas fa-angle-up"></i></a>
         <script src="./script/main.js"></script>
-
     </body>
 </html>
