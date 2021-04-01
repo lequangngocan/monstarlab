@@ -1,5 +1,5 @@
 // toggle menu
-function toggleMenu() {
+const toggleMenu = () => {
     let menu = document.querySelectorAll('.menu-mobile');
     let active = menu[0].getAttribute('class').split(' ');
     for(let i = 0; i < active.length; i++) {
@@ -14,7 +14,7 @@ function toggleMenu() {
 // back to top
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+const scrollFunction = () => {
     if(window.scrollY > 200) {
         document.querySelectorAll('.backTop')[0].style.display = 'flex';
     } else {
@@ -22,7 +22,7 @@ function scrollFunction() {
     }
 }
 
-function animateToTop(e) {
+const animateToTop = (e) => {
     e.preventDefault();
     let scrollToTop = window.setInterval(function() {
         let pos = window.pageYOffset;
@@ -39,13 +39,11 @@ function animateToTop(e) {
 const slideDelay = 3000;
 let curSlide = 0;
 
-showSlide('slideshow');
-showSlide('footer-projects');
-
-function showSlide(parent, slideIndex, autoplay) {
+const showSlide = (parent, slideIndex, autoplay) => {
     if(typeof slideIndex == 'undefined' || slideIndex == null) {
         slideIndex = 0;
     }
+    console.log(autoplay);
     let sliders = document.querySelectorAll('.'+parent)[0].children[0];
     
     if (slideIndex >= sliders.childElementCount) {
@@ -58,7 +56,9 @@ function showSlide(parent, slideIndex, autoplay) {
     sliders.className = sliders.className.replace(' autoplay', '');
     if(autoplay != false) {
         sliders.className += ' autoplay';
-    } 
+    } else {
+        sliders.className = sliders.className.replace(' autoplay', '');
+    }
 
     // dotted
     let dots = document.querySelectorAll('.'+parent+' .dot');
@@ -72,11 +72,11 @@ function showSlide(parent, slideIndex, autoplay) {
         let prev = document.querySelectorAll('.'+parent+' .button-prev')[0];
         let next = document.querySelectorAll('.'+parent+' .button-next')[0];
         prev.onclick = function() {
-            showSlide(parent, slideIndex-1);
+            showSlide(parent, slideIndex-1, autoplay);
         };
     
         next.onclick = function() {
-            showSlide(parent, slideIndex+1);
+            showSlide(parent, slideIndex+1, autoplay);
         };
     }
 
@@ -107,3 +107,6 @@ setInterval(()=>{
         j++;
     }
 }, slideDelay);
+
+showSlide('slideshow');
+showSlide('footer-projects');
