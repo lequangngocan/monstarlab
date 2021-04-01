@@ -15,9 +15,9 @@ window.onscroll = function() {scrollFunction()};
 
 const scrollFunction = () => {
     if(window.scrollY > 200) {
-        document.querySelectorAll('.backTop')[0].style.display = 'flex';
+        document.querySelector('.backTop').style.display = 'flex';
     } else {
-        document.querySelectorAll('.backTop')[0].style.display = 'none';
+        document.querySelector('.backTop').style.display = 'none';
     }
 }
 
