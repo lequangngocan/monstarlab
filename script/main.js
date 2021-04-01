@@ -1,14 +1,13 @@
 // toggle menu
 const toggleMenu = () => {
-    let menu = document.querySelectorAll('.menu-mobile');
-    let active = menu[0].getAttribute('class').split(' ');
-    for(let i = 0; i < active.length; i++) {
-        if(active[i] == 'active') {
-            menu[0].classList.remove("active");
-        } else {
-            menu[0].className += ' active';
-        }
+    const menu = document.querySelector('.menu-mobile');
+
+    if(menu.classList.contains('active')){
+        menu.classList.remove('active');
+    } else {
+        menu.classList.add('active');
     }
+    
 }
 
 // back to top
@@ -23,10 +22,10 @@ const scrollFunction = () => {
 }
 
 const animateToTop = () => {
-    let scrollToTop = window.setInterval(function() {
-        let pos = window.pageYOffset;
+    const scrollToTop = window.setInterval(function() {
+        const pos = window.pageYOffset;
 
-        if(pos > 0 && pageYOffset >= 10) {
+        if(pos > 0) {
             window.scrollTo(0, pos - 20);
         } else {
             window.clearInterval(scrollToTop);
@@ -39,11 +38,10 @@ const slideDelay = 3000;
 let curSlide = 0;
 
 const showSlide = (parent, slideIndex, autoplay) => {
-    if(typeof slideIndex == 'undefined' || slideIndex == null) {
+    if(typeof slideIndex === 'undefined' || slideIndex === null) {
         slideIndex = 0;
     }
-    let sliders = document.querySelectorAll('.'+parent)[0].children[0];
-    
+    const sliders = document.querySelector(`.${parent}`).children[0];
     if (slideIndex >= sliders.childElementCount) {
         slideIndex = 0;
     } else if (slideIndex < 0) {
@@ -51,24 +49,24 @@ const showSlide = (parent, slideIndex, autoplay) => {
     }
 
     // check autoplay
-    sliders.className = sliders.className.replace(' autoplay', '');
+    sliders.classList.remove('autoplay');
     if(autoplay != false) {
-        sliders.className += ' autoplay';
+        sliders.classList.add('autoplay');
     } else {
-        sliders.className = sliders.className.replace(' autoplay', '');
+        sliders.classList.remove('autoplay');
     }
 
     // dotted
-    let dots = document.querySelectorAll('.'+parent+' .dot');
+    const dots = document.querySelectorAll(`.${parent} .dot`);
     for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '');
+        dots[i].classList.remove('active');
     }
-    dots[slideIndex].className += ' active';
+    dots[slideIndex].classList.add('active');
 
     // navigative
     if(sliders.previousSibling.nextSibling.nextElementSibling.className == 'owl-nav') {
-        let prev = document.querySelectorAll('.'+parent+' .button-prev')[0];
-        let next = document.querySelectorAll('.'+parent+' .button-next')[0];
+        const prev = document.querySelector(`.${parent} .button-prev`);
+        const next = document.querySelector(`.${parent} .button-next`);
         prev.onclick = function() {
             showSlide(parent, slideIndex-1, autoplay);
         };
@@ -85,16 +83,16 @@ const showSlide = (parent, slideIndex, autoplay) => {
 }
 
 setInterval(()=>{
-    let sliders = document.querySelectorAll('.slider');
-    let listAuto = [];
-    curSlide++;
+    const sliders = document.querySelectorAll('.slider');
+    const listAuto = [];
 
     if (curSlide >= sliders.childElementCount) {
         curSlide = 0;
     }
+    curSlide++;
     
     for(let i = 0; i < sliders.length; i++) {
-        if(sliders[i].classList[1] == 'autoplay') {
+        if(sliders[i].classList.contains('autoplay')) {
             listAuto.push(sliders[i].parentElement.className);
         }
     }
