@@ -905,6 +905,9 @@ footer {
 	.slideshow-content__description {
 		padding: 60px 20px;
 	}
+	.search-form {
+		left: 41%;
+	}
 }
 
 @media screen and (min-width: 480px) {
@@ -914,6 +917,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+	.search-form {
+		left: 10%;
+	}
 	.footer__box input {
 		height: 45px;
 	}
