@@ -33,6 +33,11 @@
 	font-family: 'Myriad Pro';
 }
 
+html {
+	box-sizing: content-box;
+	width: 100%;
+}
+
 ul {
 	list-style: none;
 }
@@ -932,7 +937,7 @@ footer {
 	.menu {
 		display: block;
 	}
-	.section-9 {
+	.section.section-9 {
 		padding: 100px 0;
 	}
 }
